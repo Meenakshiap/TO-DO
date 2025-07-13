@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="second.css">
+    
+
+
+     <script>
+    function login() {
+      // ✅ Accept any email and password
+      localStorage.setItem("loggedIn", "true");
+      window.location.href = "index.html"; // Redirect to your todo page
+    }
+  </script>
+
+
+
+
+
+
+
+    <title>login page</title>
+</head>
+<body>
+    <div class="container">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+</body>
+</html>
